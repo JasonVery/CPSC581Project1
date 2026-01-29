@@ -27,6 +27,15 @@ body {
     justify-content: center;
 }
 
+#jasonFish{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: 5;
+    bottom: 20%;
+    right: 15.5%;
+}
+
 #backgroundImage {
     position: absolute;
     inset: 0;
@@ -35,6 +44,7 @@ body {
     /* object-fit: cover; */
     image-rendering: pixelated;
     display: block;
+    z-index: 0;
 }
 
 .buttonCont {

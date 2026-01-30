@@ -27,7 +27,25 @@ body {
     justify-content: center;
 }
 
-#jasonFish{
+
+/* ///////////////////////////////////////////////// */
+/*                 Jason's Assests                   */
+/* ///////////////////////////////////////////////// */
+.jasonAsset {
+    opacity: 0;
+    transition:
+        opacity 250ms ease-out,
+        transform 250ms ease-out;
+    pointer-events: none;
+    transform: translateY(6px);
+}
+
+.jasonAsset.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#jasonFish {
     position: absolute;
     width: 60px;
     height: 60px;
@@ -35,6 +53,74 @@ body {
     bottom: 20%;
     right: 15.5%;
 }
+
+#jasonComp {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 5;
+    top: 36%;
+    right: 41.5%;
+}
+
+#jasonPlant {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 5;
+    top: 35.5%;
+    right: 44%;
+}
+
+#jasonPlant2 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 5;
+    top: 35%;
+    right: 35.5%;
+}
+
+#jasonPlant3 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 5;
+    top: 44.9%;
+    left: 37.5%;
+}
+
+#jasonFire {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 5;
+    top: 53.9%;
+    right: 40.5%;
+
+}
+
+#jasonPerson {
+    position: absolute;
+    width: 28px;
+    height: 45px;
+    z-index: 5;
+    top: 40.9%;
+    right: 39.5%;
+
+}
+
+#jasonBTNAnimation {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    z-index: 5;
+    top: 13.5%;
+    left: 39%;
+    transform: rotate(-22deg);
+
+}
+
 
 #backgroundImage {
     position: absolute;
@@ -75,16 +161,24 @@ body {
 
 }
 
+/* ///////////////////////////////////////////////// */
+/*                 Jason's Button                    */
+/* ///////////////////////////////////////////////// */
 #jasonButton {
-
-
+    image-rendering: pixelated;
+    transition: transform 200ms ease;
 }
 
-#justinButton {
-
-
+#jasonButton:hover {
+    transform: scale(1.1) translateY(-3px);
 }
 
-#jullianaButton {
-
+/* clicked / toggled state */
+#jasonButton.active {
+  transform: rotate(-30deg);
 }
+
+
+#justinButton {}
+
+#jullianaButton {}

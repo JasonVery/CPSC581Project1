@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7aad55;
+    overflow-x: hidden;
+
+}
+
+.mainCont {
+    display: flex;
+    justify-content: center;
+
+}
+
+.bgCont {
+    position: relative;
+    width: 896px;
+    height: 768px;
+    transform: scale(2.8);
+    transform-origin: top center;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ///////////////////////////////////////////////// */
+/*                 Jason's Assests                   */
+/* ///////////////////////////////////////////////// */
+.jasonAsset {
+    opacity: 0;
+    transition:
+        opacity 250ms ease-out,
+        transform 250ms ease-out;
+    pointer-events: none;
+    transform: translateY(6px);
+}
+
+.jasonAsset.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#jasonFish {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: 5;
+    bottom: 20%;
+    right: 15.5%;
+}
+
+#jasonComp {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 5;
+    top: 36%;
+    right: 41.5%;
+}
+
+#jasonPlant {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 5;
+    top: 35.5%;
+    right: 44%;
+}
+
+#jasonPlant2 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 5;
+    top: 35%;
+    right: 35.5%;
+}
+
+#jasonPlant3 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 5;
+    top: 44.9%;
+    left: 37.5%;
+}
+
+#jasonFire {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 5;
+    top: 53.9%;
+    right: 40.5%;
+
+}
+
+#jasonPerson {
+    position: absolute;
+    width: 28px;
+    height: 45px;
+    z-index: 5;
+    top: 40.9%;
+    right: 39.5%;
+
+}
+
+#jasonBTNAnimation {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    z-index: 5;
+    top: 13.5%;
+    left: 39%;
+    transform: rotate(-22deg);
+
+}
+
+
+#backgroundImage {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    image-rendering: pixelated;
+    display: block;
+    z-index: 0;
+}
+
+.buttonCont {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+
+.btn {
+    pointer-events: auto;
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 300ms ease;   
+}
+
+/* button glow when julliana's button is active */
+.btn.glow {
+    filter:
+    drop-shadow(0 0 4px rgba(255, 230, 150, 0.6))
+    drop-shadow(0 0 10px rgba(255, 210, 90, 0.7))
+    drop-shadow(0 0 16px rgba(255, 190, 60, 0.6));
+  }
+
+/* ///////////////////////////////////////////////// */
+/*                 Jason's Button                    */
+/* ///////////////////////////////////////////////// */
+#jasonButton {
+    image-rendering: pixelated;
+    transition: transform 200ms ease;
+}
+
+#jasonButton:hover {
+    transform: scale(1.1) translateY(-3px);
+}
+
+/* clicked / toggled state */
+#jasonButton.active {
+  transform: rotate(-30deg);
+}
+
+
+#justinButton {}
+
+/* ///////////////////////////////////////////////// */
+/*              Julliana's Assests                   */
+/* ///////////////////////////////////////////////// */
+.jullianaAsset {
+    opacity: 0;
+    transition:
+        opacity 250ms ease-out,
+        transform 250ms ease-out;
+    pointer-events: none;
+    transform: translateY(6px);
+}
+
+.jullianaAsset.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#jullianaLaptop {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    z-index: 5;
+    top: 28%;
+    right: 44%;  
+}
+
+#jullianaPiano {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    z-index: 5;
+    top: 23%;
+    right: 44%;  
+}
+
+#jullianaPerson {
+    position: absolute;
+    width: 35px;
+    height: 55px;
+    z-index: 5;
+    top: 26%;
+    right: 39%;  
+}
+
+#jullianaPolaroid {
+    position: absolute;
+    width: 17px;
+    height: 23px;
+    z-index: 5;
+    top: 30%;
+    right: 46.5%;
+}
+
+#jullianaVanity {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    z-index: 5;
+    top: 25%;
+    right: 35.5%;
+}
+
+#jullianaMic {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    z-index: 5;
+    top: 35.5%;
+    right: 57.9%;
+}
+
+#jullianaLuggage {
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    z-index: 5;
+    top: 40.3%;
+    right: 53.4%;
+}
+
+#jullianaBTNAnimation {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    z-index: 5;
+    top: 13%;
+    right: 38.5%;
+}
+
+
+/* ///////////////////////////////////////////////// */
+/*              Julliana's Button                    */
+/* ///////////////////////////////////////////////// */
+#jullianaButton {
+    image-rendering: pixelated;
+    transition: transform 200ms ease;
+}
+
+#jullianaButton.size-0 { transform: scale(0.60); }
+#jullianaButton.size-1 { transform: scale(0.70); }
+#jullianaButton.size-2 { transform: scale(0.80); }
+#jullianaButton.size-3 { transform: scale(0.90); }
+#jullianaButton.size-4 { transform: scale(1.0); }
+
+#jullianaButton.size-0:hover { transform: scale(0.70); }
+#jullianaButton.size-1:hover { transform: scale(0.80); }
+#jullianaButton.size-2:hover { transform: scale(0.90); }
+#jullianaButton.size-3:hover { transform: scale(1.0); } 
+#jullianaButton.size-4:hover { transform: scale(1.1); } 

@@ -139,3 +139,53 @@ const jullianaAssets = [
     }
   });
   
+
+  // /////////////////////////////////////////////
+//              JUSTIN ANIMATIONS              //
+// /////////////////////////////////////////////
+
+const justinButton = document.getElementById("justinButton");
+
+const justinAssets = [
+    document.getElementById("justinBackpack"),
+    document.getElementById("justinBaseball"),
+    document.getElementById("justinMicrophone"),
+    document.getElementById("justinTent"),
+    document.getElementById("justinVideoGames")
+
+];
+  
+
+
+let justinAssetsVisible = false;
+let justinIsClicked = false;
+
+
+justinButton.addEventListener("click", () => {
+    if (justinIsClicked === false) {
+        justinButton.classList.add("active");
+        justinIsClicked = true;
+    } else {
+        justinButton.classList.remove("active");
+        justinIsClicked = false;
+    }
+
+    // Hides assests
+    if (justinAssetsVisible) {
+        justinAssets.forEach(asset => {
+            asset.classList.remove("visible");
+        });
+        justinAssetsVisible = false;
+        // Shows assets on click
+    } else {
+        justinAssets.forEach((asset, i) => {
+            setTimeout(() => {
+                asset.classList.add("visible");
+            }, i * 120);
+        });
+        justinAssetsVisible = true;
+    }
+
+
+});
+

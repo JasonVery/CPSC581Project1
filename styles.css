@@ -187,7 +187,7 @@ body {
 }
 
 
-#justinButton {}
+
 
 /* ///////////////////////////////////////////////// */
 /*              Julliana's Assests                   */
@@ -298,3 +298,80 @@ body {
 #jullianaButton.size-2:hover { transform: scale(0.90); }
 #jullianaButton.size-3:hover { transform: scale(1.0); } 
 #jullianaButton.size-4:hover { transform: scale(1.1); } 
+
+
+/* ///////////////////////////////////////////////// */
+/*                 Justin's Assests                   */
+/* ///////////////////////////////////////////////// */
+.justinAsset {
+    opacity: 0;
+    transition:
+        opacity 250ms ease-out,
+        transform 250ms ease-out;
+    pointer-events: none;
+    transform: translateY(6px);
+}
+
+.justinAsset.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#justinBackpack {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 5;
+    bottom: 60%;
+    right: 57%;
+}
+
+#justinBaseball {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    z-index: 5;
+    bottom: 70%;
+    right: 55%;
+}
+
+#justinMicrophone {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    z-index: 5;
+    bottom: 53%;
+    right: 45%;
+}
+
+#justinTent {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 5;
+    bottom: 46%;
+    right: 40%;
+}
+
+#justinVideoGames {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    z-index: 5;
+    bottom: 70%;
+    right: 57%;
+}
+
+#justinButton {
+    image-rendering: pixelated;
+    transition: transform 200ms ease;
+}
+
+#justinButton:hover {
+    transform: scale(1.1) translateY(-3px);
+}
+
+/* clicked / toggled state */
+#justinButton.active {
+  transform: rotate(-30deg);
+}
